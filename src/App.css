@@ -2,9 +2,10 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Avatar {
+  margin: 40px 40px;
+  border: 2px solid white;
+
 }
 
 .App-header {
@@ -26,11 +27,6 @@
   justify-content: center;
   align-items: center;
   display: flex;
-}
-
-.Avatar {
-  margin: 20px;
-  border: 2px solid white;
 }
 
 
