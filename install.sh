@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# Install NPM & Node if not present
+if ! command -v npm &> /dev/null; then
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+  . "$HOME/.nvm/nvm.sh"
+  nvm install node
+fi
+
+
 install_args=(
   "npm install @mui/material @emotion/react @emotion/styled"
   "npm install @mui/material @mui/styled-engine-sc styled-components"
@@ -8,7 +16,7 @@ install_args=(
 )
 
 for arg in "${install_args[@]}"; do
-  eval "$arg" || {
+  eval "$arg" && clear || {
     echo "Failed to execute: $arg"
     exit 1
   }

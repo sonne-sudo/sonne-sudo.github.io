@@ -1,10 +1,13 @@
 #!/bin/bash
-DIR="$HOME/personal/portfolio"
-
-# 
 while [[ $# -gt 0 ]]; do
   case "$1" in
-
+    --install)
+      INSTALL=true
+      cd "$DIR"
+      # ./install.sh
+      npm install
+      shift
+      ;;
     --start)
       START=true
       shift
