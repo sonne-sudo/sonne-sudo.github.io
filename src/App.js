@@ -16,7 +16,7 @@ function App() {
         />
       </Box>
 
-      <Grid container direction={"column"} alignItems="center" justifyContent="center" spacing={2}>
+      <Grid container direction={"column"} >
         <header className="App-header">
           {/* <img src={logo} className="App-logo" alt="logo" /> */}
         </header>
