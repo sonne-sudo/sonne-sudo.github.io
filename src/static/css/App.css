@@ -5,7 +5,6 @@
 .Avatar {
   margin: 40px 40px;
   border: 2px solid white;
-
 }
 
 .App-header {
@@ -28,7 +27,6 @@
   align-items: center;
   display: flex;
 }
-
 
 .App-description {
   /* margin: 20px; */
