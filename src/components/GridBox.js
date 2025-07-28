@@ -15,7 +15,7 @@ const GridBox = () => {
                 <Grid container className="right-container" direction="column" spacing={2} sx={{ flexGrow: 1 }}>
                     <Grid item xs={12} sx={{ border: '1px solid #ccc', flexGrow: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                         {/* Content */}
-                        <p>Top Row Content</p>
+                        <h1>About Me</h1>
                         
                     </Grid>
                     <Grid item xs={12} sx={{ border: '1px solid #ccc', flexGrow: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
